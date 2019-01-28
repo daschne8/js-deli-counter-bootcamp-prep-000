@@ -4,6 +4,9 @@ function takeANumber(line, name){
   var greeting = "Welcome, "+name+". You are number "+linePosition+" in line.";
   return greeting;
 }
-function nowServing(){
-return 5;
+function nowServing(katzDeliLine){
+  if(line.length === 0){
+    return "There is nobody waiting to be served!"
+  }
+  return katzDeliLine.shift();
 }
