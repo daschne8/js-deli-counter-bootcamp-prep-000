@@ -1,7 +1,8 @@
 function takeANumber(line, name){
-  linePosition = line.length + 1;
+  line.push(name);
+  var linePosition = line.length ;
   return "Welcome, ${name}. You are number ${linePosition} in line.";
 }
 function nowServing(){
-
+return 5;
 }
